@@ -6,4 +6,5 @@ sudo git fetch
 sudo git checkout 7ffad873d99120105eda5c93cbd3140058913d27
 sudo ./gradlew build
 sudo supervisorctl reload
+sleep 3s
 sudo renice -n -5 -p $(pgrep ^java$)
