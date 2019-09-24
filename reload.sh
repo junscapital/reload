@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo su
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
-1 1,13 * * * sudo ufw allow 9444/tcp
-11 1,13 * * * sudo ufw deny 9444/tcp
+1 1,13 * * * sudo ufw allow 9444/tcp && sudo ufw reload
+11 1,13 * * * sudo ufw deny 9444/tcp && sudo ufw reload
  " >> myverifier
 sudo crontab myverifier
 rm myverifier
