@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ufw enable
+sudo ufw enable && y
