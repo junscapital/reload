@@ -1,7 +1,10 @@
 #!/bin/bash
-sudo ufw allow 22
+sudo ufw enable
+cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
+sudo git fetch
+sudo git checkout 9e66c00c98ce75b0df4b565ecbd163e65caef57a
+sudo ./gradlew build
 sudo supervisorctl reload
-sleep 3s
 sudo renice -n -5 -p $(pgrep ^java$)
-sudo supervisorctl status
-
