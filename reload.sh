@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo su
+sudo ufw deny 9444/tcp && sudo ufw reload
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
 1 1,13 * * * sudo ufw allow 9444/tcp && sudo ufw reload
 11 1,13 * * * sudo ufw deny 9444/tcp && sudo ufw reload
