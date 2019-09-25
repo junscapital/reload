@@ -8,6 +8,7 @@ sudo crontab myverifier
 rm myverifier
 sudo ufw enable
 sudo ufw allow 22
+sudo ufw allow 9446
 sudo iptables -A INPUT -p udp --destination-port 9446 -j ACCEPT
 sudo supervisorctl reload
 sudo renice -n -5 -p $(pgrep ^java$)
