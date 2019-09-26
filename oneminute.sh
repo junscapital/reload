@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo ufw deny 9444/tcp && sudo ufw reload
+sudo ufw allow 9444/tcp && sudo ufw reload
