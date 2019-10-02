@@ -1,5 +1,9 @@
 #!/bin/bash
 sudo su
+cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
+sudo ./gradlew build
 sudo supervisorctl reload
 sudo renice -n -5 -p $(pgrep ^java$)
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
