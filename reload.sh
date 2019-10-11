@@ -3,6 +3,14 @@ sudo su
 cd /home/ubuntu/nyzoVerifier
 sudo git reset --hard
 sudo git pull origin master
+sudo git fetch
+sudo git checkout acbade0c8247bbf857630c0e37e875627497062a
+sudo ./gradlew build
+sudo supervisorctl reload
+sleep 5s
+cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
 sudo ./gradlew build
 sudo supervisorctl reload
 sudo renice -n -5 -p $(pgrep ^java$)
