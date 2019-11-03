@@ -1,5 +1,11 @@
 #!/bin/bash
 sudo su
+sudo swapoff -a -v
+sudo rm /swapfile
+sudo apt clean
+sudo rm -rf ~/.cache/thumbnails/*
+sudo ufw deny 9444/tcp
+sudo ufw status
 cd /home/ubuntu/nyzoVerifier
 sudo git reset --hard
 sudo git pull origin master
