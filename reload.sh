@@ -4,6 +4,7 @@ sudo swapoff -a -v
 sudo rm /swapfile
 sudo apt clean
 sudo rm -rf ~/.cache/thumbnails/*
+sudo ufw allow 9444/tcp
 cd /home/ubuntu/nyzoVerifier
 sudo git reset --hard
 sudo git pull origin master
