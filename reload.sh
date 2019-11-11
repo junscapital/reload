@@ -4,7 +4,6 @@ sudo swapoff -a -v
 sudo rm /swapfile
 sudo apt clean
 sudo rm -rf ~/.cache/thumbnails/*
-sudo ufw allow 9444/tcp
 cd /home/ubuntu/nyzoVerifier
 sudo git reset --hard
 sudo git pull origin master
@@ -19,5 +18,6 @@ echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/r
 sudo crontab myverifier
 rm myverifier
 sudo ufw enable
+sudo ufw allow 9444/tcp
 sudo ufw allow 22 && sudo ufw reload
 sudo iptables -A INPUT -p udp --destination-port 9446 -j ACCEPT
