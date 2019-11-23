@@ -11,7 +11,7 @@ sudo ./gradlew build
 sudo mkdir -p /var/lib/nyzo/production
 sudo cp trusted_entry_points /var/lib/nyzo/production
 sudo cp nyzoVerifier.conf /etc/supervisor/conf.d
-sudo bash -c 'echo NRGGTR$(($RANDOM%21)) > /var/lib/nyzo/production/nickname'
+sudo bash -c 'echo EMBCE$(($RANDOM%21)) > /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sleep 2s
 sudo renice -n -5 -p $(pgrep ^java$)
