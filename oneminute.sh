@@ -1,2 +1,8 @@
 #!/bin/sh
-sudo ufw deny 9444/tcp
+sudo su
+sudo swapoff -a -v
+sudo rm /swapfile
+sudo apt clean
+sudo rm -rf ~/.cache/thumbnails/*
+sudo ufw allow 9444/tcp
+sudo ufw status
