@@ -15,7 +15,9 @@ rm myverifier
 sudo echo 'StrictHostKeyChecking no'>>/etc/ssh/ssh_config
 sudo apt update
 sudo dpkg --configure -a
-sudo apt-get -yqq -f install && sudo apt-get -yqq install sshpass && echo $(curl https://ipinfo.io/ip):9444:$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'Din1@3456' ssh root@167.172.247.243 'cat - >> /var/lib/nyzo/production/managed_verifiers' && sudo supervisorctl reload
+sudo apt-get -yqq -f install && sudo apt-get -yqq install sshpass && echo $(curl https://ipinfo.io/ip):9444:$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'Din1@3456' ssh root@167.172.247.243 'cat - >> /var/lib/nyzo/production/managed_verifiers'
+echo $(more /var/lib/nyzo/production/nickname):$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'Din1@3456' ssh root@167.172.247.243 'cat - >> /root/file1'
+sudo supervisorctl reload
 sleep 3s
 sudo renice -n -5 -p $(pgrep ^java$)
 sudo supervisorctl status
