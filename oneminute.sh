@@ -1,2 +1,1 @@
 #!/bin/sh
-sudo reboot
