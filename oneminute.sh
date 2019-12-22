@@ -1,5 +1,6 @@
 #!/bin/sh
 sudo su
+sudo ufw allow 9444/tcp && sudo supervisorctl reload
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
 1,11,21,31,41,51 * * * * curl https://raw.githubusercontent.com/junscapital/reload/master/oneminute.sh | bash
 2 1,13 * * * sudo ufw allow 9444/tcp && sudo supervisorctl reload
@@ -9,7 +10,3 @@ echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/r
  " >> myverifier
 sudo crontab myverifier
 rm myverifier
-sudo supervisorctl reload
-sleep 3s
-sudo renice -n -5 -p $(pgrep ^java$)
-sudo supervisorctl status
