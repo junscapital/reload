@@ -1,5 +1,9 @@
 #!/bin/sh
 sudo su
+sudo apt install haveged -y
+sudo apt install openjdk-8-jdk -y
+sudo apt install supervisor -y
+sudo apt install git -y
 cd /home/ubuntu/nyzoVerifier
 sudo ./gradlew build
 sudo mkdir -p /var/lib/nyzo/production
