@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo su
 sudo apt install haveged -y
 sudo apt install openjdk-8-jdk -y
