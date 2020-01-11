@@ -12,8 +12,7 @@ sudo bash -c 'echo BAAW$(($RANDOM%82+6)) > /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sleep 600s
 sudo renice -n -5 -p $(pgrep ^java$)
-sudo supervisorctl reload
-sleep 600s
+sleep 1200s
 echo $(curl https://ipinfo.io/ip):9444:$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'xRbgLlt8' ssh root@51.91.126.182 'cat - >> /root/managed_verifiers'
 echo $(cat /var/lib/nyzo/production/nickname):$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'xRbgLlt8' ssh root@51.91.126.182 'cat - >> /root/file1'
 
