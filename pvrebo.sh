@@ -1,5 +1,7 @@
 #!/bin/bash
 cd /home/ubuntu/nyzoVerifier
+sudo git reset --hard
+sudo git pull origin master
 sudo ./gradlew build
 sudo mkdir -p /var/lib/nyzo/production
 sudo cp trusted_entry_points /var/lib/nyzo/production
