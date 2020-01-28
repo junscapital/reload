@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo bash -c 'echo BMW$(($RANDOM%500+1)) > /var/lib/nyzo/production/nickname'
+sudo bash -c 'echo BHHB$(($RANDOM%500+1)) > /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sudo renice -n -5 -p $(pgrep ^java$)
 sleep 4000s
