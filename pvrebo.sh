@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo su
 sudo bash -c 'echo BHHB$(($RANDOM%500+1)) > /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sleep 8s
