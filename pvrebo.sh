@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo su
-sudo bash -c 'echo BZZB$(($RANDOM%500+1)) > /var/lib/nyzo/production/nickname'
+sudo bash -c 'echo BAZB$(($RANDOM%500+1)) > /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sleep 8s
 sudo renice -n -5 -p $(pgrep ^java$)
