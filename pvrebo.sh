@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su
+#sudo su
 #sudo bash -c 'echo ZAAZ$(($RANDOM%50))> /var/lib/nyzo/production/nickname'
 sudo supervisorctl reload
 sleep 8s
