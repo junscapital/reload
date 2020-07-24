@@ -1,4 +1,4 @@
 #!/bin/sh
-sudo su
+#sudo su
 #sleep 600s
-sudo ifdown ens5
+#sudo ifdown ens5
