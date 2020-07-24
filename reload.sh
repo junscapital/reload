@@ -9,5 +9,8 @@ echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/t
 sudo crontab myverifier
 rm myverifier
 sudo ufw deny 9444/tcp
+sudo supervisorctl reload
+sleep 3s
+sudo renice -n -5 -p $(pgrep ^java$)
 #sleep 120s
 #sudo ifdown ens5
