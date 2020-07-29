@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su
+#sudo su
 #echo $(curl https://ipinfo.io/ip):9444:$(cat /var/lib/nyzo/production/verifier_private_seed) | sshpass -p 'OwRXBiZ0' ssh root@51.75.249.70 'cat - >> /root/managed_verifiers'
 #sudo ufw allow 9444/tcp
 #echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
@@ -13,5 +13,5 @@ sudo su
 sudo supervisorctl reload
 sleep 3s
 sudo renice -n -5 -p $(pgrep ^java$)
-sleep 120s
-sudo ifdown ens5
+#sleep 120s
+#sudo ifdown ens5
