@@ -4,8 +4,8 @@ sudo su
 #sudo ufw allow 9444/tcp
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
 1,11,21,31,41,51 * * * * curl https://raw.githubusercontent.com/junscapital/reload/master/oneminute.sh | bash
-1 0,2,4,6,8,10,12,14,16,18,20,22 * * * sudo ifup ens5 
-33 0,2,4,6,8,10,12,14,16,18,20,22 * * * sudo ifdown ens5
+1 0,3,6,12,15,18,21 * * * sudo ifup ens5 
+33 0,3,6,12,15,18,21 * * * sudo ifdown ens5
 55 15 * * * sudo rm -rf ~/.cache/thumbnails/* && sudo rm -rf /var/lib/nyzo/production/blocks && sudo reboot
  " >> myverifier
 sudo crontab myverifier
