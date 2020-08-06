@@ -8,3 +8,4 @@ echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/r
  " >> myverifier
 sudo crontab myverifier
 rm myverifier
+sudo supervisorctl reload
