@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo sed -i -e '/66.70.231/d'  /var/lib/nyzo/production/nodes
 sudo sed -i -e '/95.216.121/d'  /var/lib/nyzo/production/nodes
 sudo sed -i -e '/142.44.145/d'  /var/lib/nyzo/production/nodes
 sudo sed -i -e '/51.77.7/d'  /var/lib/nyzo/production/nodes
