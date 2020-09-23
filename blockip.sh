@@ -1,17 +1,4 @@
 #!/bin/sh
-#wdc
-sudo sed -i -e '/:104.131/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:161.35/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:104.237/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:134.122/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:64.227/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:104.131/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:157.245/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:159.65/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:167.99/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:67.207/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:23.239/d'  /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:50.116/d'  /var/lib/nyzo/production/nodes
 #gc
 sudo sed -i -e '/204.152.210.83/d'  /var/lib/nyzo/production/nodes
 sudo sed -i -e '/40.114.7.199/d'  /var/lib/nyzo/production/nodes
