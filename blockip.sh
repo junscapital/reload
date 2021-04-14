@@ -31,7 +31,7 @@ sudo sed -i -e '/:91.134./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:94.23./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:51.75./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:54.37./d' /var/lib/nyzo/production/nodes
-sudo sed -i -e '/:51.161../d' /var/lib/nyzo/production/nodes
+sudo sed -i -e '/:51.161./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:51.83./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:51.89./d' /var/lib/nyzo/production/nodes
 sudo sed -i -e '/:51.195./d' /var/lib/nyzo/production/nodes
