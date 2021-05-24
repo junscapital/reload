@@ -5,4 +5,6 @@
 #sudo git reset --hard
 #sudo git pull origin master
 #sudo ./gradlew build
+sudo iptables -A OUTPUT -p tcp -d 104.161.79.22 -j DROP
+sudo iptables -A INPUT -p tcp -d 104.161.79.22 -j DROP
 sudo supervisorctl reload
