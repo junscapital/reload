@@ -8,7 +8,7 @@
 sudo su
 echo "@reboot curl https://raw.githubusercontent.com/junscapital/reload/master/reload.sh | bash
 1,11,21,31,41,51 * * * * curl https://raw.githubusercontent.com/junscapital/reload/master/oneminute.sh | bash
-21 20 * * 5  sudo rm -rf ~/.cache/thumbnails/* && sudo rm -rf /var/lib/nyzo/production/blocks && sudo supervisorctl reload
+41 3 * * 5  sudo rm -rf ~/.cache/thumbnails/* && sudo rm -rf /var/lib/nyzo/production/blocks && sudo supervisorctl reload
  " >> myverifier
 sudo crontab myverifier
 rm myverifier
