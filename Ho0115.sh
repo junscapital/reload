@@ -1,5 +1,4 @@
 #!/bin/sh
-#!/bin/sh
 sudo su
 sudo rm -rf ~/.cache/thumbnails/*
 sudo rm -rf /var/lib/nyzo/production/blocks/
