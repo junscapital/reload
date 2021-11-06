@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo su
 iptables -F
 iptables -I INPUT -s 65.21.109.206 -j DROP
@@ -8,8 +9,6 @@ iptables -I INPUT -s 65.21.57.174 -j DROP
 iptables -I OUTPUT -d 65.21.57.174 -j DROP
 iptables -I INPUT -s 65.108.90.241 -j DROP
 iptables -I OUTPUT -d 65.108.90.241 -j DROP
-iptables -I INPUT -s 104.248.16.236 -j DROP
-iptables -I OUTPUT -d 104.248.16.236 -j DROP
 iptables -I INPUT -s 65.108.60.15 -j DROP
 iptables -I OUTPUT -d 65.108.60.15 -j DROP
 iptables -I INPUT -s 65.21.57.175 -j DROP
@@ -48,8 +47,6 @@ iptables -I INPUT -s 95.216.211.114 -j DROP
 iptables -I OUTPUT -d 95.216.211.114 -j DROP
 iptables -I INPUT -s 65.21.105.74 -j DROP
 iptables -I OUTPUT -d 65.21.105.74 -j DROP
-iptables -I INPUT -s 65.21.59.206 -j DROP
-iptables -I OUTPUT -d 65.21.59.206 -j DROP
 iptables -I INPUT -s 65.21.105.104 -j DROP
 iptables -I OUTPUT -d 65.21.105.104 -j DROP
 iptables -I INPUT -s 65.21.62.181 -j DROP
@@ -60,7 +57,19 @@ iptables -I INPUT -s 65.21.104.7 -j DROP
 iptables -I OUTPUT -d 65.21.104.7 -j DROP
 iptables -I INPUT -s 65.21.52.141 -j DROP
 iptables -I OUTPUT -d 65.21.52.141 -j DROP
-iptables -I INPUT -s 65.21.51.189 -j DROP
-iptables -I OUTPUT -d 65.21.51.189 -j DROP
-iptables -I INPUT -s 65.21.51.189 -j DROP
-iptables -I OUTPUT -d 65.21.51.189 -j DROP
+iptables -I INPUT -s 135.181.82.153 -j DROP
+iptables -I OUTPUT -d 135.181.82.153 -j DROP
+iptables -I INPUT -s 65.21.52.139 -j DROP
+iptables -I OUTPUT -d 65.21.52.139 -j DROP
+iptables -I INPUT -s 65.21.57.55 -j DROP
+iptables -I OUTPUT -d 65.21.57.55 -j DROP
+iptables -I INPUT -s 65.21.57.49 -j DROP
+iptables -I OUTPUT -d 65.21.57.49 -j DROP
+iptables -I INPUT -s 135.181.84.49 -j DROP
+iptables -I OUTPUT -d 135.181.84.49 -j DROP
+iptables -I INPUT -s 135.181.193.29 -j DROP
+iptables -I OUTPUT -d 135.181.193.29 -j DROP
+iptables -I INPUT -s 65.21.57.60 -j DROP
+iptables -I OUTPUT -d 65.21.57.60 -j DROP
+iptables -I INPUT -s 135.181.84.92 -j DROP
+iptables -I OUTPUT -d 135.181.84.92 -j DROP
