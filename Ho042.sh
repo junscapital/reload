@@ -11,8 +11,8 @@ iptables -I INPUT -s 65.108.90.241 -j DROP
 iptables -I OUTPUT -d 65.108.90.241 -j DROP
 iptables -I INPUT -s 65.21.57.175 -j DROP
 iptables -I OUTPUT -d 65.21.57.175 -j DROP
-iptables -I INPUT -s 65.21.108.140 -j DROP
-iptables -I OUTPUT -d 65.21.108.140 -j DROP
+iptables -I INPUT -s 135.125.232.251 -j DROP
+iptables -I OUTPUT -d 135.125.232.251 -j DROP
 iptables -I INPUT -s 65.21.57.154 -j DROP
 iptables -I OUTPUT -d 65.21.57.154 -j DROP
 iptables -I INPUT -s 135.125.233.26 -j DROP
@@ -47,10 +47,6 @@ iptables -I INPUT -s 65.21.105.74 -j DROP
 iptables -I OUTPUT -d 65.21.105.74 -j DROP
 iptables -I INPUT -s 65.21.105.104 -j DROP
 iptables -I OUTPUT -d 65.21.105.104 -j DROP
-iptables -I INPUT -s 65.21.62.181 -j DROP
-iptables -I OUTPUT -d 65.21.62.181 -j DROP
-iptables -I INPUT -s 95.217.221.142 -j DROP
-iptables -I OUTPUT -d 95.217.221.142 -j DROP
 iptables -I INPUT -s 65.21.50.187 -j DROP
 iptables -I OUTPUT -d 65.21.50.187 -j DROP
 iptables -I INPUT -s 65.21.104.7 -j DROP
@@ -61,7 +57,3 @@ iptables -I INPUT -s 65.21.52.139 -j DROP
 iptables -I OUTPUT -d 65.21.52.139 -j DROP
 iptables -I INPUT -s 65.21.57.55 -j DROP
 iptables -I OUTPUT -d 65.21.57.55 -j DROP
-iptables -I INPUT -s 65.21.57.60 -j DROP
-iptables -I OUTPUT -d 65.21.57.60 -j DROP
-iptables -I INPUT -s 135.181.84.92 -j DROP
-iptables -I OUTPUT -d 135.181.84.92 -j DROP
