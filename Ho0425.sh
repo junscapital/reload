@@ -1,3 +1,4 @@
+#!/bin/sh
 sudo su
 ipset flush cycle
 ipset add cycle 135.181.65.0/24
