@@ -1,4 +1,14 @@
 #!/bin/sh
+ipset add queue 51.89.5.111
+ipset add queue 146.59.240.222
+ipset add queue 51.91.147.240
+ipset add queue 146.59.242.165
+ipset add queue 51.89.137.236
+ipset add queue 51.89.137.49
+ipset add queue 51.195.232.246
+ipset add queue 51.161.81.7
+ipset add queue 51.79.103.83
+
 ipset add queue 165.232.118.250
 ipset add queue 159.223.24.231
 ipset add queue 167.99.141.117
