@@ -287,6 +287,8 @@ ipset add queue 157.245.250.114
 ipset add queue 137.184.150.196
 ipset add queue 204.48.31.40
 ipset add queue 68.183.118.200
+
+ipset add queue 198.135.57.0/24
 ipset add queue 142.93.197.105
 ipset add queue 159.223.130.8
 ipset add queue 167.71.27.69
